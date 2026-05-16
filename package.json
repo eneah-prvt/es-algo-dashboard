@@ -1,0 +1,13 @@
+{
+  "name": "es-algo-dashboard",
+  "version": "1.0.0",
+  "description": "ES Algo Control Terminal",
+  "main": "dashboard_server.js",
+  "scripts": {
+    "start": "node dashboard_server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "node-fetch": "^2.7.0"
+  }
+}
