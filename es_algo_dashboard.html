@@ -1018,34 +1018,7 @@ canvas{width:100%;display:block;background:var(--bg0);}
     </div>
   </div>
 
-  <!-- TPO / Market Profile -->
-  <div class="sec">
-    <h3>TPO / Market Profile POC</h3>
-    <div style="font-size:9px;color:var(--text3);margin-bottom:8px;line-height:1.6">Upload 30-min OHLCV CSV to calculate TPO POC, Volume POC, VAH, VAL, Initial Balance.</div>
-    <div class="upload-zone" onclick="document.getElementById('tpoFile').click()">
-      <input type="file" id="tpoFile" accept=".csv" onchange="loadTPO(this)">
-      <div style="font-size:11px;color:var(--amber);margin-bottom:4px">⬆ Upload 30-Min Bars CSV</div>
-      <div style="font-size:9px;color:var(--text3)">DateTime, Open, High, Low, Close, Volume</div>
-    </div>
-    <div id="tpoStats" style="margin-top:8px;display:none">
-      <div class="dr"><span class="dl">TPO POC</span><span class="dv a" id="tpoPOC">—</span></div>
-      <div class="dr"><span class="dl">Volume POC</span><span class="dv g" id="volPOC">—</span></div>
-      <div class="dr"><span class="dl">VAH</span><span class="dv r" id="tpoVAH">—</span></div>
-      <div class="dr"><span class="dl">VAL</span><span class="dv g" id="tpoVAL">—</span></div>
-      <div class="dr"><span class="dl">Initial Balance H</span><span class="dv" id="tpoIBH">—</span></div>
-      <div class="dr"><span class="dl">Initial Balance L</span><span class="dv" id="tpoIBL">—</span></div>
-      <div class="dr"><span class="dl">Confluence Zone</span><span class="dv p" id="tpoConfl">—</span></div>
-    </div>
-    <div class="pr" style="margin-top:8px"><div><div class="pl">TPO Period</div></div>
-      <select class="ps" id="tpoPeriod">
-        <option value="30" selected>30 Minutes</option>
-        <option value="60">60 Minutes</option>
-      </select>
-    </div>
-    <div class="pr"><div><div class="pl">Value Area %</div><div class="pd">Standard = 70%</div></div><input class="pi" id="vaPercent" type="number" value="70" step="5"></div>
-    <div class="pr"><div><div class="pl">Use POC as Entry Filter</div><div class="pd">Only trade near POC confluence</div></div><div class="tog" id="togPOC" onclick="this.classList.toggle('on')"></div></div>
-    <div class="pr"><div><div class="pl">POC Buffer (ticks)</div></div><input class="pi" id="pocBuffer" type="number" value="4" step="1"></div>
-  </div>
+ 
 
   <div class="sec">
     <button class="btn btn-purple btn-full" id="runBtn" onclick="mcRunSimulation()">▶ RUN MONTE CARLO</button>
